@@ -13344,6 +13344,282 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">category_repartition</span><span class="p">(</span><span class="n">category</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Vous nous aider à voir la répartition des différents échantillons dans les catégories que nous allons définir&quot;&quot;&quot;</span>
+    <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">disease</span> <span class="ow">in</span> <span class="n">category</span><span class="p">:</span>
+        <span class="n">total</span> <span class="o">+=</span> <span class="n">disease_repartition</span><span class="p">[</span><span class="n">disease</span><span class="p">]</span>
+        
+    <span class="k">return</span> <span class="n">total</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>5 catégories ont été choisies :</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Adenocarcinoma :</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">category_1</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Adenocarcinoma&#39;</span><span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Il y a </span><span class="si">{}</span><span class="s2"> échantillons dans cette catégorie&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">category_repartition</span><span class="p">(</span><span class="n">category_1</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Il y a 60 échantillons dans cette catégorie
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Other Carcinoma :</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">category_2</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="s1">&#39;Carcinoma&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Carcinosarcoma&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Clear cell carcinoma&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Cystoadenocarcinoma&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Ductal carcinoma&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Large cell carcinoma&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Papillary infiltrating ductal carcinoma&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Renal spindle cell carcinoma&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Renal cell carcinoma&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Small cell bronchioalveolar carcinoma&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Squamous cell carcinoma&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Hypernephroma&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Infiltrating ductal carcinoma&#39;</span>
+            <span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Il y a </span><span class="si">{}</span><span class="s2"> échantillons dans cette catégorie&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">category_repartition</span><span class="p">(</span><span class="n">category_2</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Il y a 55 échantillons dans cette catégorie
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Leucémie :</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">category_3</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="s1">&#39;Acute lymphoblastic leukemia&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Chronic myelogenous leukemia&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Lymphoma&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Myeloma&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Pro myelocytic leukemia&#39;</span>
+            <span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Il y a </span><span class="si">{}</span><span class="s2"> échantillons dans cette catégorie&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">category_repartition</span><span class="p">(</span><span class="n">category_3</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Il y a 18 échantillons dans cette catégorie
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Mélanome :</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">category_4</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="s1">&#39;Malignant amelanotic melanoma&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Malignant melanotic melanoma&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Melanotic melanoma&#39;</span>
+            <span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Il y a </span><span class="si">{}</span><span class="s2"> échantillons dans cette catégorie&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">category_repartition</span><span class="p">(</span><span class="n">category_4</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Il y a 23 échantillons dans cette catégorie
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Cerveau :</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">category_5</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="s1">&#39;Astrocytoma&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Glial cell neoplasm&#39;</span><span class="p">,</span>
+                <span class="s1">&#39;Glioblastoma&#39;</span>
+            <span class="p">]</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Il y a </span><span class="si">{}</span><span class="s2"> échantillons dans cette catégorie&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">category_repartition</span><span class="p">(</span><span class="n">category_5</span><span class="p">)))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Il y a 18 échantillons dans cette catégorie
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Vérifier si les écart-type et moyennes de ces catégories sont logiques, pour confirmer si on a bien choisi</strong></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pour ça, il faut qu'on rajoute une ligne <code>category</code> à <code>data</code> et lui attribuer <code>1,2,3,4 ou 5</code> ou trouver un autre moyen de les identifer pour cela on peut s'aider de <code>id_cond</code> qui map les <code>ID_REF</code> de style : <code>"GSM803615", "GSM803674", "GSM803733"</code> avec les différents cancers : <code>"Small cell bronchioalveolar carcinoma", "Squamous cell carcinoma"</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
@@ -13354,6 +13630,118 @@ div#notebook {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ensuite, il faut séparer les données de test et d'entraînement :</p>
+<p><img src="./images/test_train_diagram.png" alt="coucou"></p>
+<p>Ce diagramme se trouve ici si on veut le modifier : <a href="https://drive.google.com/file/d/1mcjHukPsXNBmaIeI8rkmtCZdjN7z8OEm/view?usp=sharing">draw.io</a></p>
+<p>Pour cette étape, on peut s'inspirer du code du labo 3-4 de BBC :</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Labo 3-4 BBC :</span>
+<span class="c1"># divide the set into two sets: a train set and a test set for future validations</span>
+<span class="c1"># idx_test = [5,11,19,28,54,61]  # Soit on prend un pourcentage soit on en choisit genre 3 par catégories</span>
+<span class="c1"># idx_train = list(range(0,len(id_cond)+2)) </span>
+<span class="c1"># [idx_train.remove(i) for i in idx_test] # on enlève les données de test</span>
+
+<span class="c1"># data_test = data[:,idx_test]</span>
+<span class="c1"># data = data[:,idx_train]</span>
+
+<span class="c1"># print(np.shape(data))</span>
+<span class="c1"># print(np.shape(data_test))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Et Maintenant il faut voir pour ces écart-type</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>un endroit par là, il y a les fonctions à Guidoux qui diminue le nombre de variable de 50'000 a plus petit, pourquoi on utilise pas les méthodes du labo 3-4 ? Parce que c'était un problème à deux classes, et là on est multi classe ?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Même s'il manque les méthodes à Guidoux, ce serait bien de mettre les méthodes à Joël pour la classification, au moins une des 3 :</p>
+<ul>
+<li>Decision tree classifier</li>
+<li>Support vector machine classifier</li>
+<li>k-nearest neighbours classifier</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+
+</div>
+</div>
 </div>
     </div>
   </div>
